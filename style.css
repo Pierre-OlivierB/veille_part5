@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+}
+.container {
+  display: flex;
+  white-space: nowrap;
+  width: 100%;
+  height: clamp(3em, 10vw, 6em);
+  overflow: hidden;
+  font-family: sans-serif;
+}
+.loop-text {
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 0.25em;
+  animation: looptext 5s infinite linear;
+}
+@keyframes looptext {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
