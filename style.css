@@ -32,3 +32,68 @@ body {
 .accent-color {
   accent-color: red;
 }
+/* !------------------- */
+
+nav {
+  height: 8em;
+  position: relative;
+}
+.btn {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  right: 2em;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 300ms ease-in, color 300ms ease-in;
+}
+.search-btn {
+  background: #fff;
+  color: rgb(27, 31, 105);
+}
+.search-btn:hover {
+  color: #fff;
+  background-color: rgb(27, 31, 105);
+}
+.container_2 {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(27, 31, 105);
+  transition: top 200ms ease-in, height 300ms ease-out 200ms;
+}
+.close-btn {
+  color: #fff;
+  background: transparent;
+}
+.close-btn:hover {
+  background: #fff;
+  color: rgb(27, 31, 105);
+}
+input[type="text"] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+  width: 80%;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  caret-color: #fff;
+  color: #fff;
+}
+input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.container_2.show {
+  top: 0;
+  height: 130%;
+}
